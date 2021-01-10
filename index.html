@@ -2,52 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>mim assignmemt for lb</title>
+  <link  rel="stylesheet" href="style/style.css" >
+  <title>Form validation by lb</title>
   <meta class="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style>
-        .mainbody{
-            width :500px;
-            height: 400px;
-            border-left: 2px solid #222;
-            border-right: 2px solid #222;
-            position: absolute;
-            left : 50%;
-            top:50%;
-            transform: translate(-50%,-50%);
-        }
-        .section{
-            display: flex;
-            justify-content:center;
-        }
-        h2,p{
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        .input-group{
-            width:80%;
-            margin-top: 30px;
-            display: flex;
-            justify-content:space-around;
-        }
-        input{
-            width:50px;
-            border: none;
-            border-bottom:2px solid #aaa;
-            
-        }
-        #alert{
-            display: none;
-            color:forestgreen;
-            text-align: center;
-        }
-        input:focus{
-            border:none !important;
-           outline: none !important;
-           border-bottom:2px solid #222 !important;
-        }
-       
-    </style>
 </head>
 <body>
     <div class="mainbody">
@@ -65,11 +23,11 @@
            <input type="text"  class="otp" dindex="6" required  />
         </div>
             </div>
-        <button type="submit" style="width:80%;margin-left: 10%;padding: 10px;margin-top: 50px;" onclick="confirm()" id="btn">Confirm</button>
+        <button type="button" style="width:80%;margin-left: 10%;padding: 10px;margin-top: 50px;" onclick="confirm()" id="btn">Confirm</button>
         <br />
         <h4 id="alert">OTP confirm successfully </h4>
         
     </div>
-    <script src="index.js"></script>
+    <script src="script/index.js"></script>
 </body>
 </html>
