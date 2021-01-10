@@ -1,0 +1,7 @@
+Form validation in javascript  
+condition -
+1.  The user can enter only a 6 digit OTP (No other       characters are allowed) 
+2.  Once a digit is entered, the focus should move to the       next input
+3.   Backspace should delete the input and focus on the        previous input
+4.   The user can navigate the input boxes with arrow keys
+5.    If the user pastes the OTP from the clipboard, it should        auto-fill the input boxes
