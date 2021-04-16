@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>max size</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<input type="number" class="form-control" id="incPercentage">
+		</div>
+
+	</div>
+<script>
+
+$(document).ready(function(){
+$("#incPercentage").on("input",function(e){
+    var str = $(this).val();
+   if( str < 1){
+    $("#incPercentage").val("");
+   }
+   else if(str > 100){
+    var strstr = (Number(str[0])*10)+Number(str[1])+str[2];
+     if(strstr == 100){
+      $("#incPercentage").val(100);
+     }
+     else{
+      str = (Number(str[0])*10)+Number(str[1]);
+      $("#incPercentage").val(str);
+     }
+   }
+});
+
+});
+</script>
+</body>
+</html>
